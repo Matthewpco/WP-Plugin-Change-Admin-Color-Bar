@@ -2,7 +2,7 @@
 /* 
 Plugin Name: Change Admin Bar Color
 Description: Changes color of admin bar using js color picker
-Version: 1.1
+Version: 1.2
 Author: Matthew Payne
 Author URI: https://www.wpwebdevelopment.com
 Text Domain: change-admin-bar-color
@@ -16,12 +16,15 @@ if( !function_exists( 'add_action' ) ){
 
 // Includes
 
-// Houses the change_admin_bar_color function
 include( 'includes/init.php' );
+include( 'includes/theme-customizer.php' );
+include( 'includes/admin-bar-color.php' );
 
 // Hooks
 
-// Runs function to change color of admin bar on front end
+// Change admin bar color when viewing from the front end
 add_action('wp_head', 'change_admin_bar_color');
-// Runs function to change color of admin bar on back end
+// Change admin bar color when viewing from the back end
 add_action('admin_head', 'change_admin_bar_color');
+// Add settings to customizer and handles controller actions
+add_action( 'customize_register', 'cabc_customize_register' );

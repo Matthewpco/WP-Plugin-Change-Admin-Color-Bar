@@ -1,4 +1,4 @@
-![]()
+![](https://wpwebdevelopment.com/wp-content/uploads/2022/01/cabc-result.jpg)
 
 # This is a custom plugin designed to change the color of the admin bar for WordPress.
 
@@ -20,6 +20,11 @@
 - CSS
 <br>
 
+## ⚡ Changelog for v 1.2
+- Hooked into the WordPress customizer to follow new best practices to allow user input through Appearance menu.
+- Registered a new section and controller that loads a js color picker to receive user input and change admin bar color.
+<br>
+
 ## ⚡ Changelog for v 1.1
 - Seperated functions into the init.php file and included them from main file to follow WordPress best practices.
 <br>
@@ -30,5 +35,7 @@
 - Edit the single included file to adjust your color
 <br>
 
-![]()
+![](https://wpwebdevelopment.com/wp-content/uploads/2022/01/cabc-section.jpg)
+
+![](https://wpwebdevelopment.com/wp-content/uploads/2022/01/cabc-control.jpg)
 
