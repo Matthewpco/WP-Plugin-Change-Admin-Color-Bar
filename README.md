@@ -20,6 +20,10 @@
 - CSS
 <br>
 
+## ⚡ Changelog for v 1.1
+- Seperated functions into the init.php file and included them from main file to follow WordPress best practices.
+<br>
+
 ## ⚡ Changelog for v 1.0
 - Added security to keep plugin from being accessed directly
 - Hooked into wordpress to run a function that changes admin bar color
